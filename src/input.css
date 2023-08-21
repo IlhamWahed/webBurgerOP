@@ -24,8 +24,12 @@
 
 @layer utilities {
   .home_title,
-  .card_title {
+  .card_title,
+  .section_title {
     @apply font-oswald font-bold text-4xl lg:text-6xl uppercase;
+  }
+  .section_title {
+    @apply text-3xl;
   }
   .card_title {
     @apply text-xl;
@@ -36,4 +40,9 @@
   .paragraph {
     @apply text-paragraphColor text-xs leading-5;
   }
+}
+
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active {
+  @apply bg-secondaryColor text-blackColor;
 }
